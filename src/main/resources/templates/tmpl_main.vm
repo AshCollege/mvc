@@ -1,0 +1,32 @@
+#* @vtlvariable name="page" type="java.lang.Integer" *#
+#set($MAIN = 0)
+
+<html>
+<head>
+    <script src="/scripts/jquery.js"></script>
+    <script type="text/javascript" src="/scripts/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <title>$pagesNames.get($page)</title>
+</head>
+<style type="text/css">
+    * {font-family: arial}
+    td{padding:10px;}
+    table {border-collapse: collapse;}
+    table, th, td {border: 1px solid black;}
+    button {font-size: 20px}
+</style>
+<body dir="rtl">
+
+    <div id="content" style="float:right">
+        <h1 style="text-decoration: underline overline;">$pagesNames.get($page)</h1>
+        #if ($page == $MAIN)
+            #parse("content_main.vm")
+        #end
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+    </div>
+
+</body>
+</html>
