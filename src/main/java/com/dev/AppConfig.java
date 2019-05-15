@@ -23,15 +23,15 @@ import java.util.Properties;
 @Profile("production")
 public class AppConfig {
 
-    @Value("${db.file.properties}")
+//    @Value("${db.file.properties}")
     private String dbPropertiesPath;
 
     @Bean
     public DataSource dataSource() throws Exception {
         ComboPooledDataSource dataSource = new ComboPooledDataSource();
         dataSource.setDriverClass("com.mysql.jdbc.Driver");
-        Properties dbProps = new Properties();
-        dbProps.load(new FileInputStream(new File(dbPropertiesPath)));
+//        Properties dbProps = new Properties();
+//        dbProps.load(new FileInputStream(new File(dbPropertiesPath)));
         dataSource.setJdbcUrl(String.format("jdbc:mysql://%s/dev2019?useSSL=false&amp;useUnicode=true&amp;characterEncoding=utf8", "63.34.228.21"));
         dataSource.setUser("dev");
         dataSource.setPassword("ash2019");
