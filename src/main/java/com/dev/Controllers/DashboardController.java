@@ -15,7 +15,7 @@ public class DashboardController {
 
     @RequestMapping("/dasboard")
     public String dashboard() {
-        return "tmpl_dashboard";
+        return "tmpl_dashbonard";
     }
 
 }
