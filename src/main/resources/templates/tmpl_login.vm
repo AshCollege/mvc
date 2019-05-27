@@ -4,15 +4,28 @@
 <html>
 <head>
 
+    <link rel="stylesheet"  />
+
+    <title>  login </title>
+
 </head>
 
-<body dir="rtl">
-<center><h1>Login for page</h1></center>>
 
+<body >
 
+<div align="center">
+    <h2>Login Page</h2>
+    <form id="Login">
 
+        :User Name  <br>
+        <input type="text">  <br>
+        :Password	<br>
+        <input type="text" >  <br>
+        <a id="forget" href="#">forget password</a> <br><br>
+        <button id="conect"> Login  </button>
 
-
+    </form>
+</div>
 
 </body>
 </html>
