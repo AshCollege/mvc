@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Seller Page </title>
+    <title>Sellers Page </title>
 
 </head>
 <style>
@@ -55,57 +55,48 @@
 </style>
 <body>
 <h2>
-
-<h1> <center><b>HELLO !</b></center>
     #if($error)
-NO SELLER
-    #else
-        Seller Details:</h1>
-<div id="des">
-
-    <a href="/seller/1">SHAI</a>
+        NO SELLER
+        #else
+    <h1><center>Sellers List:</center></h1>
+    <div id="des">
 
 
-        <b> First name</b> : $seller.name<br><br>
-        <b>  Last name</b> : $seller.lastName<br><br>
-        <b>   Phone</b> : $seller.phone<br><br>
-        <b>     DateOfBirth:</b> : $seller.dateOfBirth<br><br>
-        <b>    Adress</b> : $seller.adress<br><br>
-        products description:<br>
-        <br><table id="table">
-        <tr>
-            <th>Product</th>
-            <th>Price</th>
-
-
+        #foreach($s in $sellers)
+            <br><table id="table">
+            <tr>
+            <a href="/seller/$s.oid">$s.name</a>
+            <br/>
         </tr>
+        #end
+
+##        <br><table id="table">
+##        <tr>
+##            <th>Seller</th>
+##
+##
+##        </tr>
+##
+##        <tr>
+##            <td><center<a href="/seller/1">Shai</a></center></td>
+##
+##
+##        </tr>
+##        <tr>
+##            <td><center><a href="/seller/2">Sason</a></center></td>
+##
+##        </tr>
+##        <tr>
+##            <td><center><a href="/seller/3">Som One</a></center></td>
+##
+##
+##        </tr>
+##    </table>
+
+    </div>
+</h2>
 
 
-
-
-        <tr>
-            <td><center>first</center></td>
-            <td><center>300</center></td>
-
-        </tr>
-        <tr>
-            <td><center>second</center></td>
-            <td><center>200</center></td>
-
-        </tr>
-        <tr>
-            <td><center>third</center></td>
-            <td><center>100</center></td>
-
-        </tr>
-    </table>
-
-</div>
-    </h2>
-
-
-    #end
-
-
+#end
 </body>
 </html>

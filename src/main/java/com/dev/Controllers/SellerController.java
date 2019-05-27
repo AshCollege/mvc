@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.Date;
+import java.util.List;
 
 @Controller
 public class SellerController {
@@ -26,5 +27,12 @@ public class SellerController {
         }
 
         return "tmpl_seller";
+    }
+
+    @RequestMapping("/sellers")
+    public String about1(Model model1) {
+        List<Seller> allSelers =  generalManager.loadList(Seller.class);
+        model1.addAttribute("sellers", allSelers);
+        return "tmpl_sellers";
     }
 }
