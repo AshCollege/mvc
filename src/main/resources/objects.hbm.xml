@@ -45,5 +45,17 @@
     </class>
 
 
+    <class name="com.dev.Objects.Entities.Seller" table="sellers">
+        <id name="oid" type="int" column="oid">
+            <generator class="native"/>
+        </id>
+        <property name="name" type="string" column="name"/>
+        <property name="lastName" type="string" column="last_name"/>
+        <property name="phone" type="int" column="phone"/>
+        <property name="adress" type="string" column="adress"/>
+
+    </class>
+
+
 
 </hibernate-mapping>

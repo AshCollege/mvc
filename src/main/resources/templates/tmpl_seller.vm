@@ -1,0 +1,69 @@
+#* @vtlvariable name="page" type="java.lang.Integer" *#
+#set($MAIN = 0)
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Seller Page </title>
+
+</head>
+<style>
+    h2{
+        <font size="8pt" face="Goudy Old Style" color="lightblue"> </font>
+    }
+    h1{
+        color:blue;
+    }
+
+
+</style>
+<body>
+<h2>
+
+<h1> <center><b>HELLO !</b></center>
+    #if($error)
+NO SELLER
+    #else
+        Seller Details:</h1>
+
+        <b> First name</b> : $seller.name<br><br>
+        <b>  Last name</b> : $seller.lastName<br><br>
+        <b>   Phone</b> : $seller.phone<br><br>
+        <b>     DateOfBirth:</b> : $seller.dateOfBirth<br><br>
+        <b>    Adress</b> : $seller.adress<br><br>
+        products description:<br>
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Price</th>
+
+            </tr>
+
+
+
+
+            <tr>
+                <td>first</td>
+                <td>300</td>
+
+            </tr>
+            <tr>
+                <td>second</td>
+                <td>200</td>
+
+            </tr>
+            <tr>
+                <td>third</td>
+                <td>100</td>
+
+            </tr>
+        </table>
+
+    </h2>
+
+
+    #end
+
+
+</body>
+</html>
