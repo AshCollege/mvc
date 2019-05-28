@@ -11,7 +11,6 @@ public class Seller extends BaseEntity {
     private int phone;
     private String adress;
     public Seller(){
-
     }
 
 

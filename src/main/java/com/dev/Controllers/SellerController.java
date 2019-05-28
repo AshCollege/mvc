@@ -8,8 +8,6 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import java.util.Date;
-
 @Controller
 public class SellerController {
 
@@ -24,7 +22,6 @@ public class SellerController {
         } else {
             model.addAttribute("error", true);
         }
-
         return "tmpl_seller";
     }
 }
