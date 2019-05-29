@@ -9,23 +9,35 @@
     <title>  login </title>
 
 </head>
+<script>
+    function conect() {
+        var $userName=document.getElementById('user_name').value;
+        var $password=document.getElementById('password').value;
+    }
 
+</script>
+<style>
+    .content {
+        max-width: 500px;
+        max-height: 500px;
+        margin: auto;
+    }
+</style>
 
 <body >
 
-<div align="center">
+
+<div align="center"  class"content">
     <h2>Login Page</h2>
-    <form id="Login">
-
-        
+    <div id="Login">
         :User Name  <br>
-        <input type="text">  <br>
+        <input type="text" name="userName" id="userName">  <br>
         :Password	<br>
-        <input type="text" >  <br>
-        <a id="forget" href="#">forget password</a> <br><br>
-        <button id="conect"> Login  </button>
+        <input type="password" name="password" id="password">  <br>
+        <a id="forget" href="#">forgot password</a> <br><br>
+        <button id="conect" onclick="login()"> Login  </button>
 
-    </form>
+    </div>
 </div>
 
 </body>

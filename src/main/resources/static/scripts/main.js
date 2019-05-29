@@ -25,6 +25,11 @@ $(document).ready(function () {
         return !(isUndefined(text) || text == "" || text === "");
     }
 
+    function login() {
+        var userName = $("#userName").val();
+        var password = $("#password").val();
+    }
+
 
 });
 
