@@ -53,6 +53,7 @@
         <property name="lastName" type="string" column="last_name"/>
         <property name="phone" type="int" column="phone"/>
         <property name="adress" type="string" column="adress"/>
+        <property name="password" type="string" column="password"/>
 
     </class>
 

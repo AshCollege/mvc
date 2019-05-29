@@ -25,11 +25,21 @@ $(document).ready(function () {
         return !(isUndefined(text) || text == "" || text === "");
     }
 
-    function login() {
-        var userName = $("#userName").val();
-        var password = $("#password").val();
-    }
 
 
 });
 
+
+function login() {
+    var userName = $("#userName").val();
+    var password = $("#password").val();
+    $.post("/login?", "userName=" + userName + "&password=" + password, loginResponse);
+}
+
+function loginResponse (data) {
+    if (data == "OK") {
+        window.location = "/";
+    } else {
+        $("#errorResponse").show();
+    }
+}
