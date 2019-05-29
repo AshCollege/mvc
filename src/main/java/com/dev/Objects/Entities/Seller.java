@@ -10,6 +10,8 @@ public class Seller extends BaseEntity {
     private Date dateOfBirth;
     private int phone;
     private String adress;
+    private String password;
+
     public Seller(){
 
     }
@@ -62,5 +64,13 @@ public class Seller extends BaseEntity {
 
     public void setAdress(String adress) {
         this.adress = adress;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 }
