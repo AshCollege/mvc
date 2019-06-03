@@ -2,6 +2,7 @@ package com.dev.Objects.Entities;
 
 import com.dev.Objects.General.BaseEntity;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Seller extends BaseEntity {
@@ -13,7 +14,6 @@ public class Seller extends BaseEntity {
     private String password;
 
     public Seller(){
-
     }
 
 
@@ -72,5 +72,9 @@ public class Seller extends BaseEntity {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+    public String getBirthDateIfExists() {
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy/MM/dd");
+        return this.dateOfBirth == null ? "UNKNOWN" : simpleDateFormat.format(this.dateOfBirth);
     }
 }

@@ -1,5 +1,6 @@
 package com.dev;
 
+import com.dev.Objects.Entities.Product;
 import com.dev.Objects.General.*;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -76,5 +77,10 @@ public class Persist {
     public <T> void delete(Class<T> clazz, List<Integer> oidsList) {
         getQuerySession().createQuery(String.format("DELETE FROM %s WHERE oid IN (:oidsList)", clazz.getSimpleName())).setParameterList(PARAM_OIDS_LIST, oidsList).executeUpdate();
     }
+
+    public List<Product> loadProductBySeller(int sellerOid) {
+        return getQuerySession().createQuery("FROM Product p WHERE p.seller.oid = " + sellerOid).list();
+    }
+
 
 }
