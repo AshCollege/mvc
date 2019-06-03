@@ -1,0 +1,34 @@
+#* @vtlvariable name="page" type="java.lang.Integer" *#
+#set($MAIN = 0)
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Draw</title>
+
+</head>
+<style>
+    h2{
+        <font size="8pt" face="Goudy Old Style" color="red"> </font>
+    }
+    h1{
+        color:blue;
+    }
+</style>
+<body>
+<h2>
+
+<h1> <center><b></b></center>
+    #if($error)
+        NO draw
+    #else
+        Draw Details:</h1>
+        <b>Name</b> : ${ticket.name}<br><br>
+        <b>Ticket Number</b>: ${ticket.ticketNumber}<br><br>
+        <b>Date of draw</b>: ${ticket.dateOfDraw}<br><br>
+        <b>Total ticket</b>: ${ticket.totalTicket}<br><br>
+        <b>Price</b>: ${ticket.price}$<br><br>
+    </h2>
+    #end
+</body>
+</html>

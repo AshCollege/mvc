@@ -59,8 +59,11 @@
             <generator class="native"/>
         </id> 
         <property name="name" type="string" column="name"/>
-        <property name="ticketNumber" type="string" column="ticket_number"/>
+        <property name="ticketNumber" type="int" column="ticket_number"/>
         <property name="dateOfDraw" type="date" column="date_of_draw"/>
+        <property name="totalTicket" type="int" column="total_ticket"/>
+        <property name="price" type="float" column="price"/>
+
     </class>
 
 </hibernate-mapping>
