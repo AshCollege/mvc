@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Sellers Page </title>
+    <title>Products Page </title>
 
 </head>
 <style>
@@ -59,50 +59,28 @@
 <body>
 <h2>
     #if($error)
-        NO SELLER
-        #else
-    <h1><center>Sellers List:</center></h1>
-    <div id="des">
+        NO PRODUCT
+    #else
+        <h1><center>Products List:</center></h1>
+        <div id="des">
 
 
-        #foreach($s in $sellers)
-            <br><table id="table">
-            <tr>
+            #foreach($p in $product)
+                <br><table id="table">
+                <tr>
 
-                <th> <a href="/seller/$s.oid">$s.name</a></th>
-
-        </tr>
-
-        </table>
-        #end
-
-##        <br><table id="table">
-##        <tr>
-##            <th>Seller</th>
-##
-##
-##        </tr>
-##
-##        <tr>
-##            <td><center<a href="/seller/1">Shai</a></center></td>
-##
-##
-##        </tr>
-##        <tr>
-##            <td><center><a href="/seller/2">Sason</a></center></td>
-##
-##        </tr>
-##        <tr>
-##            <td><center><a href="/seller/3">Som One</a></center></td>
-##
-##
-##        </tr>
-##
-
-    </div>
-</h2>
+                    <th> <a href="/product/$s.oid">$s.name</a></th>
 
 
-#end
+                </tr>
+
+            </table>
+            #end
+
+        </div>
+    </h2>
+
+
+    #end
 </body>
 </html>

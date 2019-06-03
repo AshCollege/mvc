@@ -54,9 +54,17 @@
         <property name="phone" type="int" column="phone"/>
         <property name="adress" type="string" column="adress"/>
         <property name="password" type="string" column="password"/>
-
+        <property name="dateOfBirth" type="java.util.Date" column="date_of_birth"/>
     </class>
 
-
+    <class name="com.dev.Objects.Entities.Product" table="products">
+        <id name="oid" type="int" column="oid">
+            <generator class="native"/>
+        </id>
+        <property name="name" type="string" column="name"/>
+        <property name="price" type="string" column="price"/>
+        <many-to-one name="seller" column="seller_oid"
+                     class="com.dev.Objects.Entities.Seller"/>
+    </class>
 
 </hibernate-mapping>

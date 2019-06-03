@@ -63,41 +63,35 @@ NO SELLER
         Seller Details:</h1>
 <div id="des">
 
-    <a href="/seller/1">SHAI</a>
-
-
+   ## <a href="/seller/1">SHAI</a>
+    <h2> <b> $seller.name's personal information:</b> <br><br></h2>
         <b> First name</b> : $seller.name<br><br>
         <b>  Last name</b> : $seller.lastName<br><br>
         <b>   Phone</b> : $seller.phone<br><br>
-        <b>     DateOfBirth:</b> : $seller.dateOfBirth<br><br>
+        <b>     DateOfBirth:</b> : $seller.getBirthDateIfExists()<br><br>
         <b>    Adress</b> : $seller.adress<br><br>
-        products description:<br>
-        <br><table id="table">
+       <b>product description:</b> <br>
+        <br>
+       <table id="table">
         <tr>
             <th>Product</th>
             <th>Price</th>
-
-
         </tr>
 
 
+       #foreach($p in $products)
+           <tr>
+               <td>
+                   $p.name
+               </td>
+               <td>
+                   $p.price
+               </td>
 
+           </tr>
 
-        <tr>
-            <td><center>first</center></td>
-            <td><center>300</center></td>
+       #end
 
-        </tr>
-        <tr>
-            <td><center>second</center></td>
-            <td><center>200</center></td>
-
-        </tr>
-        <tr>
-            <td><center>third</center></td>
-            <td><center>100</center></td>
-
-        </tr>
     </table>
 
 </div>
