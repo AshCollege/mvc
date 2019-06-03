@@ -27,15 +27,13 @@ public class LoginController {
         List<Seller> sellerList = generalManager.getList(Seller.class);
         String pass = String.valueOf(password);
         for (Seller s : sellerList) {
-            if (s.getName().toUpperCase().equals(userName.toUpperCase()) &&
-                    s.getPassword().toUpperCase().equals(pass.toUpperCase())) {
+            if (s.getName().equals(userName.toUpperCase()) &&
+                    s.getPassword().equals(password.toUpperCase())) {
                 return "OK";
             }
-
-
         }
         return "ERROR";
-
     }
+
 }
 

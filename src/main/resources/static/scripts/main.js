@@ -38,8 +38,16 @@ function login() {
 
 function loginResponse (data) {
     if (data == "OK") {
-        window.location = "/";
+        window.location = "/dasboard";
     } else {
         $("#errorResponse").show();
     }
 }
+
+function disconneft() {
+    window.location = "/login-page";
+
+}
+
+
+

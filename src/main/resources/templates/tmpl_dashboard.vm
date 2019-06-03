@@ -26,7 +26,8 @@ hello: $userName
         }
     </style>
 
-
+    <script src="/scripts/jquery.js"></script>
+    <script src="/scripts/main.js"></script>
 
 
 </head>
@@ -34,6 +35,14 @@ hello: $userName
 
     <body dir="rtl">
     <center><h1 class="title">ברוכים הבאים אל האתר</h1></center>
+
+    <div align="left">
+        <br>
+        <button id="disconect" color="blue" onclick="disconneft()"> Disconnect  </button>
+        <br>
+
+
+    </div>
     <center><h4>רשימת מוצרים</h4></center>
 
 <table border="13" style="border-color:greenyellow">
