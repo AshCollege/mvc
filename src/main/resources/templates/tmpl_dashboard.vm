@@ -1,41 +1,114 @@
-
-
 #* @vtlvariable name="page" type="java.lang.Integer" *#
 #set($MAIN = 0)
-
+hello: $userName
 <html>
 <head>
+    <style>
+
+        * {
+            font-family: Aharoni;
+           color:white;
+            background-color:yellow;
+            background-image: url("https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F428810%2Flottery_gettyimages-511601836.jpg&w=700&op=resize");
+        }
+
+        h1.title{
+            color:red;
+            font-family:sans-serif;
+        }
+        table, td{
+            background: white;
+            color: black;
+        }
+
+        h4 {
+            color:white;
+        }
+    </style>
+
+
+
 
 </head>
+<center>
+
+    <body dir="rtl">
+    <center><h1 class="title">ברוכים הבאים אל האתר</h1></center>
+    <center><h4>רשימת מוצרים</h4></center>
+
+<table border="13" style="border-color:greenyellow">
+    <tr>
+        <td>prodact a</td>
+        <td>prodact b</td>
+        <td>rodact b</td>
+        <td>rodact c</td>
+
+
+    </tr>
+    <tr>
+        <td>prodact a</td>
+        <td>prodact b</td>
+        <td>rodact b</td>
+        <td>rodact b</td>
+
+
+
+    </tr>
+    <tr>
+        <td>prodact a</td>
+        <td>prodact b</td>
+        <td>rodact b</td>
+        <td>rodact b</td>
+
+
+
+    </tr>
+</table>
+
+    <center><h4>רשימת מוכרים</h4></center>
+    <table border="13" style="border-color: red">
+        <tr>
+            <td>seller a</td>
+            <td>seller a</td>
+            <td>sseller a</td>
+            <td>seller a</td>
+
+
+        </tr>
+        <tr>
+            <td>seller a</td>
+            <td>seller a</td>
+            <td>sseller a</td>
+            <td>seller a</td>
+
+
+        </tr>
+        <tr>
+            <td>seller a</td>
+            <td>seller a</td>
+            <td>sseller a</td>
+            <td>seller a</td>
+
+
+        </tr>
+        <tr>
+            <td>seller a</td>
+            <td>seller a</td>
+            <td>sseller a</td>
+            <td>seller a</td>
+
+
+        </tr>
+    </table>
 
 
 
 
 
 
+    <gdsgsdgsdhfshfsshfhsdf_ORiel_dfdffhs></gdsgsdgsdhfshfsshfhsdf_ORiel_dfdffhs>
 
 
-
-
-
-
-
-
-
-
-
-
-<body dir="rtl">
-<center><h1>"ברוכים הבאים" אל האתר</h1></center>>
-1111
-
-
-
-
-
-
-<gdsgsdgsdhfshfsshfhsdf_ORiel_dfdffhs></gdsgsdgsdhfshfsshfhsdf_ORiel_dfdffhs>
-
-
-</body>
+    </body>
+</center>
 </html>
