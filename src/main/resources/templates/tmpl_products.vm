@@ -7,18 +7,21 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Seller Page </title>
+    <title>Products Page </title>
 
 </head>
 <style>
 
 
-    table{
-        width: 50%;
-    }
-    table, th, td {
+    table {
 
-        border: 1px solid black;
+        width: 100%;
+    }
+
+    th, td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 2px solid lightsteelblue;
     }
 
     h2{
@@ -55,53 +58,29 @@
 </style>
 <body>
 <h2>
-
-<h1> <center><b>HELLO !</b></center>
     #if($error)
-NO SELLER
+        NO PRODUCT
     #else
-        Seller Details:</h1>
-<div id="des">
-        <b> First name</b> : $seller.name<br><br>
-        <b>  Last name</b> : $seller.lastName<br><br>
-        <b>   Phone</b> : $seller.phone<br><br>
-        <b>     DateOfBirth:</b> : $seller.dateOfBirth<br><br>
-        <b>    Adress</b> : $seller.adress<br><br>
-        products description:<br>
-        <br><table id="table">
-        <tr>
-            <th>Product</th>
-            <th>Price</th>
+        <h1><center>Products List:</center></h1>
+        <div id="des">
 
 
-        </tr>
+            #foreach($p in $product)
+                <br><table id="table">
+                <tr>
+
+                    <th> <a href="/product/$s.oid">$s.name</a></th>
 
 
+                </tr>
 
+            </table>
+            #end
 
-        <tr>
-            <td><center>first</center></td>
-            <td><center>300</center></td>
-
-        </tr>
-        <tr>
-            <td><center>second</center></td>
-            <td><center>200</center></td>
-
-        </tr>
-        <tr>
-            <td><center>third</center></td>
-            <td><center>100</center></td>
-
-        </tr>
-    </table>
-
-</div>
+        </div>
     </h2>
 
 
     #end
-
-
 </body>
 </html>

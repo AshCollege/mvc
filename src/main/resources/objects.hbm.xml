@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
         "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
-<hibernate-mapping package="com.dev.Objects.Entities">
+<hibernate-mapping>
 
-    <class name="ConfigObject" table="config">
+
+    <class name="com.dev.Objects.Entities.ConfigObject" table="config">
         <id name="oid" type="int" column="oid">
             <generator class="native"/>
         </id>
@@ -12,10 +13,11 @@
         <property  name="deleted" type="boolean">
             <column name="deleted"  default="false"/>
         </property>
+
     </class>
 
 
-    <class name="TranslationObject" table="translations" lazy="false">
+    <class name="com.dev.Objects.Entities.TranslationObject" table="translations" lazy="false">
         <id name="oid" type="int" column="oid">
             <generator class="native"/>
         </id>
@@ -27,7 +29,7 @@
         </property>
     </class>
 
-    <class name="LangObject" table="languages">
+    <class name="com.dev.Objects.Entities.LangObject" table="languages">
         <id name="oid" type="int" column="oid">
             <generator class="native"/>
         </id>
@@ -43,7 +45,7 @@
     </class>
 
 
-    <class name="Seller" table="sellers">
+    <class name="com.dev.Objects.Entities.Seller" table="sellers">
         <id name="oid" type="int" column="oid">
             <generator class="native"/>
         </id>
@@ -51,19 +53,9 @@
         <property name="lastName" type="string" column="last_name"/>
         <property name="phone" type="int" column="phone"/>
         <property name="adress" type="string" column="adress"/>
-    </class>
-
-
-    <class name="Ticket" table="ticket">
-        <id name="oid" type="int" column="oid">
-            <generator class="native"/>
-        </id> 
-        <property name="name" type="string" column="name"/>
-        <property name="ticketNumber" type="int" column="ticket_number"/>
-        <property name="dateOfDraw" type="date" column="date_of_draw"/>
-        <property name="totalTicket" type="int" column="total_ticket"/>
-        <property name="price" type="float" column="price"/>
 
     </class>
+
+
 
 </hibernate-mapping>
