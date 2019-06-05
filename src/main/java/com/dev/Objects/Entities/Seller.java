@@ -13,6 +13,7 @@ public class Seller extends BaseEntity {
     private String adress;
     private String password;
 
+
     public Seller(){
     }
 
@@ -73,6 +74,8 @@ public class Seller extends BaseEntity {
     public void setPassword(String password) {
         this.password = password;
     }
+
+
     public String getBirthDateIfExists() {
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy/MM/dd");
         return this.dateOfBirth == null ? "UNKNOWN" : simpleDateFormat.format(this.dateOfBirth);

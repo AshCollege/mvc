@@ -46,7 +46,6 @@ function loginResponse (data) {
 
 function disconneft() {
     window.location = "/login-page";
-
 }
 
 
