@@ -32,7 +32,7 @@ public class AppConfig {
         dataSource.setDriverClass("com.mysql.jdbc.Driver");
 //        Properties dbProps = new Properties();
 //        dbProps.load(new FileInputStream(new File(dbPropertiesPath)));
-        dataSource.setJdbcUrl(String.format("jdbc:mysql://%s/dev2019?useSSL=false&amp;useUnicode=true&amp;characterEncoding=utf8", "63.34.228.21"));
+        dataSource.setJdbcUrl(String.format("jdbc:mysql://%s/dev2019?useSSL=false&amp;useUnicode=true&amp;characterEncoding=utf8", "localhost"));
         dataSource.setUser("dev");
         dataSource.setPassword("ash2019");
         dataSource.setMaxPoolSize(20);

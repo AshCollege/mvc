@@ -3,13 +3,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.elector</groupId>
-    <artifactId>monitor</artifactId>
+    <groupId>com.mvc</groupId>
+    <artifactId>mvc</artifactId>
     <version>19-9-18</version>
     <packaging>jar</packaging>
 
-    <name>monitor</name>
-    <description>Monitor</description>
+    <name>mvc</name>
+    <description>mvc</description>
 
 
 
